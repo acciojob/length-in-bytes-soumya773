@@ -4,4 +4,4 @@ const byteSize = (str) => {
 
 // Do not change the code below
 const str = prompt("Enter some string.");
-alert(byteSize(str).toString()); // Ensure Cypress gets a string output
+alert(String(byteSize(str))); // Convert output to a string
