@@ -1,7 +1,7 @@
 const byteSize = (str) => {
-  return new Blob([str]).size;
+  return str.length;
 };
 
 // Do not change the code below
 const str = prompt("Enter some string.");
-alert(String(byteSize(str))); // Convert output to a string
+alert(String(byteSize(str))); 
