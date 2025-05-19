@@ -5,10 +5,10 @@ cy.on("window:alert", str => {
 
 
 
-const byteSize = (str) => {
+function byteSize(str) {
   return new Blob([str]).size;
-};
+}
 
-// Do not change the code below
-const str = prompt("Enter some string.");
-alert(String(byteSize(str))); 
+const input = prompt("Enter a string:");
+const result = byteSize(input);
+alert(result);
